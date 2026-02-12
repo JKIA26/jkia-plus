@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JKia Plus | Real Estate Booking & Billing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>JKia Plus</h1>
+    <p>Real Estate Booking & Billing System</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Create Account</h2>
+
+      <form id="signupForm">
+        <input type="text" id="fullName" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <select id="role" required>
+          <option value="">Select Role</option>
+          <option value="TENANT">Tenant</option>
+          <option value="LANDLORD">Landlord</option>
+          <option value="ADMIN">Admin</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p id="msg"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
